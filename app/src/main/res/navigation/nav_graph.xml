@@ -11,12 +11,21 @@
         android:label="fragment_splash"
         tools:layout="@layout/fragment_splash" >
         <action
-            android:id="@+id/action_splashFragment_to_etNoteFragment"
-            app:destination="@id/etNoteFragment" />
+            android:id="@+id/action_splashFragment_to_listTaskFragment"
+            app:destination="@id/listTaskFragment" />
     </fragment>
     <fragment
-        android:id="@+id/etNoteFragment"
-        android:name="com.example.todolist.EtNoteFragment"
-        android:label="fragment_et_note"
-        tools:layout="@layout/fragment_et_note" />
+        android:id="@+id/listTaskFragment"
+        android:name="com.example.todolist.ListTaskFragment"
+        android:label="fragment_list_task"
+        tools:layout="@layout/fragment_list_task" >
+        <action
+            android:id="@+id/action_listTaskFragment_to_addTaskFragment"
+            app:destination="@id/addTaskFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addTaskFragment"
+        android:name="com.example.todolist.AddTaskFragment"
+        android:label="fragment_add_task"
+        tools:layout="@layout/fragment_add_task" />
 </navigation>
