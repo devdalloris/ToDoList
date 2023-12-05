@@ -11,10 +11,10 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.RecyclerView
-import com.example.todolist.OnItemClickListener
+import com.example.todolist.domain.OnItemClickListener
 import com.example.todolist.R
 import com.example.todolist.TaskRvAdapter
-import com.example.todolist.TimeUtility
+import com.example.todolist.domain.TimeUtility
 import com.example.todolist.data.TaskDatabase
 import com.example.todolist.data.TaskEntity
 import com.example.todolist.databinding.FragmentListTaskBinding

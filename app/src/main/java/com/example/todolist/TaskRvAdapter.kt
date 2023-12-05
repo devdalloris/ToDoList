@@ -5,6 +5,8 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.todolist.data.TaskEntity
 import com.example.todolist.databinding.TaskItemBinding
+import com.example.todolist.domain.OnItemClickListener
+
 class TaskRvAdapter(private val list: List<TaskEntity>) :
     RecyclerView.Adapter<TaskRvAdapter.ViewHolder>() {
 
@@ -15,7 +17,6 @@ class TaskRvAdapter(private val list: List<TaskEntity>) :
             binding.txtTaskTitle.text=task.txtTaskTitle
             binding.txtTask.text = task.txtTask
             binding.txtDate.text=task.date
-
             binding.root.setOnClickListener {
                 listener?.onItemClicked(adapterPosition)
             }
@@ -30,7 +31,6 @@ class TaskRvAdapter(private val list: List<TaskEntity>) :
             )
         )
     }
-
     override fun getItemCount(): Int = list.size
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {

@@ -7,7 +7,7 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.navigation.fragment.findNavController
 import com.example.todolist.R
-import com.example.todolist.TimeUtility
+import com.example.todolist.domain.TimeUtility
 import com.example.todolist.data.TaskDatabase
 import com.example.todolist.data.TaskEntity
 import com.example.todolist.databinding.FragmentAddTaskBinding
