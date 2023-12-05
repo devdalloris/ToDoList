@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/splashFragment"
-        android:name="com.example.todolist.SplashFragment"
+        android:name="com.example.todolist.presentation.SplashFragment"
         android:label="fragment_splash"
         tools:layout="@layout/fragment_splash" >
         <action
@@ -16,7 +16,7 @@
     </fragment>
     <fragment
         android:id="@+id/listTaskFragment"
-        android:name="com.example.todolist.ListTaskFragment"
+        android:name="com.example.todolist.presentation.ListTaskFragment"
         android:label="fragment_list_task"
         tools:layout="@layout/fragment_list_task" >
         <action
@@ -25,7 +25,11 @@
     </fragment>
     <fragment
         android:id="@+id/addTaskFragment"
-        android:name="com.example.todolist.AddTaskFragment"
+        android:name="com.example.todolist.presentation.AddTaskFragment"
         android:label="fragment_add_task"
-        tools:layout="@layout/fragment_add_task" />
+        tools:layout="@layout/fragment_add_task" >
+        <action
+            android:id="@+id/action_addTaskFragment_to_listTaskFragment"
+            app:destination="@id/listTaskFragment" />
+    </fragment>
 </navigation>
